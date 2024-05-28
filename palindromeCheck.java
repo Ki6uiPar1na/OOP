@@ -43,13 +43,14 @@ public class palindromeCheck {
                         System.out.println("Your entered number is not a palindrome.");
                     }
                 } else if (flag == 2) {
-                    CheckPalindrome str = new CheckPalindrome();
                     System.out.printf("Enter the string to check palindrome: ");
-                    String nx = sc.nextLine();
-                    if (str.check(nx)) {
-                        System.out.println("YES");
-                    } else {
-                        System.out.println("NO");
+                    String nx = sc.next();
+                    CheckPalindrome ch = new CheckPalindrome();
+                    if(ch.check(nx)){
+                        System.out.println("YES! your stirng is palindrome");
+                    }
+                    else{
+                        System.out.println("NO! your string is not palindrome");
                     }
                 }
             } else if (entry == 2) {
@@ -58,4 +59,5 @@ public class palindromeCheck {
         }
         sc.close();
     }
+
 }
