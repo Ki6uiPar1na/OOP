@@ -84,12 +84,12 @@ public class employeSalaryAdjustment{
             }
             else if(entry == 2){
                 System.out.println("EXIT.....");
+                sc.close();
                 break;
             }
             else{
                 System.out.println("Enter correct input");
-            }
-            
+            } 
         }
     }
 
